@@ -2,6 +2,7 @@ html,body,#app {
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 1366px;
 }
 .el-breadcrumb{
     margin-bottom: 15px;
@@ -13,4 +14,24 @@ html,body,#app {
 .el-button--primary,.el-button--primary:hover,.el-button--primary:focus{
     background-color: slateblue;
     border-color: slateblue;
+}
+.el-tag{
+    background-color:rgb(218, 184, 248);
+    color: blueviolet;
+    border-color:rgb(205, 148, 255) ;
+    
+}
+.el-tag .el-tag__close {
+    color: blueviolet
+}
+.el-tag .el-tag__close:hover {
+    color: #FFF;
+    background-color: blueviolet;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: blueviolet;
+    border-color:blueviolet;
+}
+.el-cascader-menu{
+    height: 300px;
 }
