@@ -35,3 +35,8 @@ html,body,#app {
 .el-cascader-menu{
     height: 300px;
 }
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
+    color: #FFF;
+    background-color: rgb(140, 129, 212);
+    border-color: rgb(140, 129, 212);
+}
