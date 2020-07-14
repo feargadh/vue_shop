@@ -12,10 +12,19 @@ import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
 
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+import { config } from 'vue/types/umd'
+
 axios.defaults.baseURL='https://www.liulongbin.top:8888/api/private/v1/'
 axios.interceptors.request.use(config => {
   console.log(config);
+  NProgress.start();
   config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config;
+})
+axios.interceptors.response.use(config =>{
+  NProgress.done();
   return config;
 })
 Vue.prototype.$http = axios
