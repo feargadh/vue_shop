@@ -33,7 +33,7 @@
           <!-- 添加参数按钮 -->
           <el-button type="primary" size="mini" :disabled="isBtnDisable" @click="showAddDialog">添加参数</el-button>
           <!-- 动态参数列表 -->
-          <el-table :data="manyTableData" border>
+          <el-table row-key='id' :data="manyTableData" border>
             <!-- 展开列 -->
             <el-table-column type="expand">
               <template slot-scope="scope">

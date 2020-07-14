@@ -22,7 +22,7 @@
       </el-row>
 
       <!-- 用户列表 -->
-      <el-table :data="userList" stripe border>
+      <el-table row-key='id' :data="userList" stripe border>
         <el-table-column type="index"></el-table-column>
         <el-table-column label="姓名" prop="username"></el-table-column>
         <el-table-column label="电话" prop="mobile"></el-table-column>

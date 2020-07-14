@@ -18,7 +18,7 @@
       </el-row>
 
       <!-- 订单列表表格 -->
-      <el-table :data="orderList" border>
+      <el-table row-key='id' :data="orderList" border>
         <el-table-column type="index"></el-table-column>
         <el-table-column label="订单编号" prop="order_number"></el-table-column>
         <el-table-column label="订单价格" prop="order_price" width="100"></el-table-column>

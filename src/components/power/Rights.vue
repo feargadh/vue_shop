@@ -10,7 +10,7 @@
     <!-- 卡片区域 -->
     <el-card>
       <!-- 权限列表 -->
-      <el-table :data="rightList" stripe border>
+      <el-table row-key='id' :data="rightList" stripe border>
         <el-table-column type="index"></el-table-column>
         <el-table-column label="权限名称" prop="authName"></el-table-column>
         <el-table-column label="路径" prop="path"></el-table-column>
